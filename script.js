@@ -1,6 +1,8 @@
 const insert = () => {
+    let display = document.querySelector('#title').value
     let type = document.querySelector('#type').value 
     let label = document.querySelector('#label').value 
+    let title_form = ''
 
     switch(type){
         case 'text': appendText(label)
