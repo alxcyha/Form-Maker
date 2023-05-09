@@ -14,24 +14,28 @@
             <img src="logo_transparent.png" width="200">
         </header>
         <div class="form-control mt-2">
-            <div class="d-flex flex-row mb-3">
-                <input class="form-control form-control-lg" type="text" placeholder="Untitled Form" id="title"></input>
-            </div>
             
             <select id="type" class="form-select">
                 <option value="text">Text</option>
+
                 <option value="button">Button</option>
                 <option value="radio">Radio</option>
                 <option value="checkbox">Checkbox</option>
             </select>
 
             <input type="text" class="form-control mt-2" id="label" placeholder="Label">
+            <label class="form-check-label" for="flexRadioDefault1" id="choice"></label>
+
             <div class="d-flex flex-row justify-content-end">
-                <button class="btn btn-primary mt-2" onclick="insert()">Insert Element</button>
+                <button class="btn btn-primary mt-2" onclick="insert()" id="btn1">Insert Element</button>
             </div>
             <hr>
             <div class="card p-2" id="display">
                 <h4 class="text-secondary">Form Preview</h4>
+                <div class="d-flex flex-row mb-3">
+                    <input class="form-control form-control-lg" type="text" placeholder="Untitled Form" id="title"></input>
+                </div>
+                
             </div>
         </div>
     </main>
